@@ -45,7 +45,7 @@
 - belongs_to group
 
 |Column|Type|Option|
-|--------|----------| 
+|:---|:---|:---|
 |id|integer|  
 |group_id|references|
 |user_id|references|
