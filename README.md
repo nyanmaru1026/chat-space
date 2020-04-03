@@ -6,27 +6,27 @@
 - has_many groups_users
 - has_many groups through: :groups_users
 
-| Column                | Type    | Option       |
-| --------------------; | ------- | ------------ |
-| id                    | integer |              |  
-| name                  | string  | null: false  |
-| e-mail                | string  | unique: true |
-| password              | string  | null: false  |
-| password_confirmation | string  | null: false  |
-| timestamp             |         |              |
+|Column|Type|Option|
+|:---|:---|:---|
+|id|integer|
+|name|string|null: false|
+|e-mail|string|unique: true|
+|password|string|null: false|
+|password_confirmation|string|null: false|
+|timestamp|
 
 ## messgages
 ### association
 - belongs_to user
 - belongs_to group
 
-| Column    | Type    | 
-| --------; | ------- | 
-| body      | text    |  
-| image     | string  |
-| user_id   | integer |
-| group_id  | integer |
-| timestamp |         |
+|Column|Type| 
+|:---|:---| 
+|body|text|  
+|image|string|
+|user_id|integer|
+|group_id|integer|
+|timestamp|
 
 ## groups
 ### association
