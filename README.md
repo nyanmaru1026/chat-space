@@ -34,10 +34,10 @@
 - has_many group_users
 - belongs_to users thorugh: :group_users
 
-| Column     | Type    | Option      |
-| ---------; | ------- | ----------- |
-| id         | integer |             | 
-| group_name | string  | null: false |
+|Column|Type|Option|
+|:---|:---|:---|
+|id|integer|
+|group_name|string|null: false|
 
 ## group_users
 ### association
