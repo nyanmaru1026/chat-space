@@ -20,24 +20,24 @@
 - belongs_to user
 - belongs_to group
 
-|Column|Type| 
-|:---|:---| 
+|Column|Type|option|
+|:---|:---|:---|
 |body|text|  
 |image|string|
-|user_id|integer|
-|group_id|integer|
+|user_id|references|null: false,foreign_key: true|
+|group_id|references|null: false,foreign_key: true|
 |timestamp|
 
 ## groups
 ### association
 - has_many messages
 - has_many group_users
-- belongs_to users thorugh: :group_users
+- has_many users thorugh: :group_users
 
 |Column|Type|Option|
 |:---|:---|:---|
 |id|integer|
-|group_name|string|null: false|
+|name|string|null: false|
 
 ## group_users
 ### association
@@ -47,5 +47,5 @@
 |Column|Type|Option|
 |:---|:---|:---|
 |id|integer|  
-|group_id|references|
-|user_id|references|
+|group_id|references|null: false,foreign_key: true|
+|user_id|references|null: false,foreign_key: true|
