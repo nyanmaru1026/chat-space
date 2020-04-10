@@ -2,7 +2,7 @@
   .main-chat-group-info
     test
     .main-chat-edit-btn
-      %a{:href => "#"} Edit
+      = link_to "Edit", "#"
     .main-chat-group-member
       member:sato
   .main-chat-message-list
@@ -28,10 +28,10 @@
         %input{:placeholder => "  type a message", :type => "text"}/
       .main-chat-message-input-box-icon
         %label 
-          -# ファイルを選択してください
           %input{:type => "file", class: "none"}/
           =icon('fas', 'image')
       .main-chat-message-input-box-send-btn
-        %a{:href => "#"}Send
+        = link_to "Send", "#"
+
 
 
