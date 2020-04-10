@@ -1,0 +1,121 @@
+.main_chat{
+  width: calc(100vw - 300px);
+  float: left;
+  height: 100vw;
+  .main-chat-group-info{
+    height: 100px;
+    background-color: #ffffff;
+    width: calc(100vw - 300px);
+    font-size: 20px;
+    color: #333333;
+    padding-top: 35px;
+    padding-left: 40px;
+    .main-chat-group-member{
+      color: #999999;
+      font-size: 12px;
+      padding-top: 15px;
+    }
+    .main-chat-edit-btn{
+      float: right;
+      height: 40px;
+      margin-right: 40px;
+      border: 1px solid;
+      width: 72px;  
+      padding: 0px 20px;    
+      line-height: 40px;
+      color: #38aef0; 
+    }
+    .main-chat-edit-btn a{
+      color: #38aef0; 
+      text-decoration: none;
+    }
+
+  }
+  .main-chat-message-list{
+    height: calc(100vw - 190px);
+    background-color:#fafafa ;
+    width: calc(100vw - 300px);
+    padding-left: 40px;
+    padding-top: 35px;
+  }
+    .main-chat-message-list-info{
+      display: flex;
+    }
+      .main-chat-message-talker{
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .main-chat-message-date{
+        font-size: 12px;
+        color: #999999;
+        margin-left: 10px;
+        }
+    .main-chat-message-statement{
+        font-size: 14px;
+        color: #434a54;
+        margin-top: 12px;
+    }
+    .main-chat-message-list2{
+      height: calc(100vw - 190px);
+      background-color:#fafafa ;
+      width: calc(100vw - 300px);
+      padding-top: 46px;
+    }
+      .main-chat-message-list-info2{
+        display: flex;
+      }
+        .main-chat-message-talker2{
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .main-chat-message-date2{
+          font-size: 12px;
+          color: #999999;
+          margin-left: 10px;
+          }
+      .main-chat-message-statement2{
+          font-size: 14px;
+          color: #434a54;
+          margin-top: 12px;
+      }
+  .main-chat-message-form{
+    height: 90px;
+    background-color: #d2d2d2;
+    width: calc(100vw - 260px);
+    .main-chat-message-input-box{
+      line-height: 90px;
+      margin-left: 40px;
+      height: 100%;
+      width: 100%;
+      position: relative;
+      display: flex;   
+        .main-chat-message-input-box-2 input{
+          width: 750px;
+          height: 50px;
+        }
+        .main-chat-message-input-box-icon {
+          right: 220px;  
+          position: absolute;
+          font-size: 1.3rem;
+          .none{
+            visibility: hidden;
+          }
+        }
+        .main-chat-message-input-box-send-btn{
+          padding-left: 25px;
+          border: 1px solid;
+          width: 100px;
+          height: 50px;
+          color: #38aef0;
+          background-color: #38aef0;
+          margin: 20px 40px 20px 15px;
+          line-height: 50px;
+        }
+        .main-chat-message-input-box-send-btn a{
+          text-decoration: none;
+          color: #fafafa;
+          font-weight: bold;
+        }
+    }
+  }
+}

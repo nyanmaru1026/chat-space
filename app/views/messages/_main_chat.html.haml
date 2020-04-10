@@ -1,0 +1,37 @@
+.main_chat
+  .main-chat-group-info
+    test
+    .main-chat-edit-btn
+      %a{:href => "#"} Edit
+    .main-chat-group-member
+      member:sato
+  .main-chat-message-list
+    .main-chat-message-list-info
+      .main-chat-message-talker
+        sato
+      .main-chat-message-date
+        2020/04/09
+    .main-chat-message-statement
+      おはよう
+    .main-chat-message-list2
+      .main-chat-message-list-info2
+        .main-chat-message-talker2
+          sato
+        .main-chat-message-date2
+          2020/04/09
+      .main-chat-message-statement2
+        おはよう
+      
+  .main-chat-message-form
+    %form.main-chat-message-input-box
+      .main-chat-message-input-box-2
+        %input{:placeholder => "  type a message", :type => "text"}/
+      .main-chat-message-input-box-icon
+        %label 
+          -# ファイルを選択してください
+          %input{:type => "file", class: "none"}/
+          =icon('fas', 'image')
+      .main-chat-message-input-box-send-btn
+        %a{:href => "#"}Send
+
+
