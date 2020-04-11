@@ -2,7 +2,7 @@
   width: 300px;
   color: white;
   float: left;
-  height: 100vw;
+  height: 100vh;
   .side-header {
     height: 100px;
     display: flex;
@@ -29,7 +29,7 @@
       }
   }
   .side-bar-grouplist{
-    height: calc(100vw - 100px);
+    height: calc(100vh - 100px);
     background-color: #2f3e51;
     font-weight: bold;
     .group-name{
