@@ -37,6 +37,7 @@
       width: calc(100vw - 300px);
       padding-left: 40px;
       padding-top: 35px;
+      overflow: scroll;
     .main-chat-message-list{
       padding-bottom: 20px;
       .main-chat-message-list-info{
@@ -92,37 +93,46 @@
       width: 100%;
       display: flex;  
       .main-chat-message-input-box{
-        position: relative;
-        .main-chat-message-input-box-2 input{
-          width: 750px;
+        .new_message{
+          display: flex;
+        }
+        .main-chat-message-input-box-2 {
+          margin-top: 21px;
+          width: calc(100vw - 520px);
           height: 50px;
+          border: none;
         }
         .main-chat-message-input-box-icon {
-          right: 10px;  
-          top: 0px;
-          position: absolute;
           font-size: 1.3rem;
+          i{
+            line-height: 50px;
+            width: 30px;
+            background-color: #ffffff;
+            margin-top: 20px;
+          }
           .none{
             visibility: hidden;
+            display: none;
           }
         }
       } 
         
         .main-chat-message-input-box-send-btn{
-          padding-left: 25px;
+          padding-left: 0px;
           border: 1px solid;
           width: 100px;
           height: 50px;
-          color: #38aef0;
+          color: #ffffff;
           background-color: #38aef0;
           margin: 20px 40px 20px 15px;
           line-height: 50px;
-        }
-        .main-chat-message-input-box-send-btn a{
           text-decoration: none;
-          color: #fafafa;
-          font-weight: bold;
         }
+        // .main-chat-message-input-box-send-btn a{
+        //   text-decoration: none;
+        //   color: #fafafa;
+        //   font-weight: bold;
+        // }
     }
   }
 }

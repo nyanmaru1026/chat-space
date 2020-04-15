@@ -1,39 +1,25 @@
 .main_chat
   .main-chat-group-info
-    test
+    =@group.name
     .main-chat-edit-btn
-      = link_to "Edit", "#"
+      = link_to "Edit", edit_group_path(@group.id)
     .main-chat-group-member
-      member:sato
+      member:
+      - @group.users.each do |member|
+        = member.name
   .main-chat-message
-    .main-chat-message-list
-      .main-chat-message-list-info
-        .main-chat-message-talker
-          sato
-        .main-chat-message-date
-          2020/04/09
-      .main-chat-message-statement
-        おはよう
-    .main-chat-message-list
-      .main-chat-message-list-info
-        .main-chat-message-talker
-          sato
-        .main-chat-message-date
-          2020/04/09
-      .main-chat-message-statement
-        おはよう
+    = render @messages
+    
       
   .main-chat-message-form
-    %form.main-chat-message-input
+    .main-chat-message-input
       .main-chat-message-input-box
-        .main-chat-message-input-box-2
-          %input{:placeholder => "  type a message", :type => "text"}/
-        .main-chat-message-input-box-icon
-          %label 
-            %input{:type => "file", class: "none"}/
-            =icon('fas', 'image')
-      .main-chat-message-input-box-send-btn
-        = link_to "Send", "#"
+        = form_for [@group, @message] do |f|
+          = f.text_field :content, class: 'main-chat-message-input-box-2', placeholder: 'type a message'
+          = f.label :image, class: 'main-chat-message-input-box-icon' do
+            = icon('fas', 'image')
+            = f.file_field :image, class: 'none'
+          = f.submit 'Send', class: 'main-chat-message-input-box-send-btn'
 
 
 
